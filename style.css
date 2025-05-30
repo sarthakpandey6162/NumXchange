@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ec9797 url('sample.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #f0f0f5;
+}
+
+.converter {
+  background: #ffcc00;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+  width: 320px;
+  transition: transform 0.3s ease;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  text-shadow: 1px 1px 2px #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #222;
+}
+
+input {
+  background-color: #93c2ec;
+  color: #ffcc00;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  font-weight: 600;
+}
+
+/* Glow on focus */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 12px #ffcc00;
+  border-color: #fff100;
+  background-color: #333;
+  color: #fff100;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
